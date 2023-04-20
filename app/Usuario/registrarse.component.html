@@ -1,0 +1,30 @@
+<body>
+<div id="title">
+            <h1>Registrate</h1>
+</div>
+
+<input type="text" placeholder="Ingresa tu nombre" [(ngModel)]="persona.nombre">
+<br>
+<br>
+<input type="text" placeholder="Ingresa tu apellido" [(ngModel)]="persona.apellido">
+<br>
+<br>
+<input type="text" placeholder="Nombre de usuario" [(ngModel)]="persona.usuario">
+<br>
+<br>
+<input type="password" placeholder="contraseña"[(ngModel)]="persona.password">
+<br>
+<br>
+<input type="password" placeholder="confirma tu contraseña" [(ngModel)]="confirmar">
+<button (click)="conf()"  class="btn btn-outline-dark">Confirmar contraseña</button>
+<div *ngIf="confirmado==2">
+    <h5>Las contraseñas no coinciden</h5>
+</div>
+<div *ngIf="confirmado==1">
+    <input type="submit" (click)="registro()" routerLink={{pagina}}>
+</div>
+</body>
+
+
+
+

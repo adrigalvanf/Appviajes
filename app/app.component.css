@@ -1,0 +1,11 @@
+li{
+    text-decoration: none;
+}
+h5{
+    display: inline;
+    margin-left: 1.5%;
+}
+button{
+    background-color: rgb(125, 173, 240);
+    border-color: rgb(125, 173, 240);
+}

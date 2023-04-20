@@ -1,0 +1,26 @@
+<div>
+    <h1>Mi Agenda de Viajes</h1>
+    <h3>¡Bienvenido {{usuario}}!</h3>
+    <p>{{today | date}}</p>
+</div>
+
+<div>
+        <button type="button" class="btn btn-light" (click)="abrir()">+Agregar Nuevo Destino</button>
+        <button type="button" class="btn btn-light" (click)="rest()">Buscar Informacion por destino</button>
+        <div id="nuevodestino" *ngIf="nuevo==1">
+            <input type="text" placeholder="Nombre de la Ciudad" [(ngModel)]="Destino.destino">
+            <input type="date" placeholder="Desde" [(ngModel)]="Destino.entrada">
+            <input type="date" placeholder="Hasta" [(ngModel)]="Destino.salida">
+            <input type="text" placeholder="Hospedaje" [(ngModel)]="Destino.hospedaje">
+            <input type="text" placeholder="Notas" [(ngModel)]="Destino.comentarios">
+            <button class="btn btn-light"(click)="guardar()">Planear Viaje</button>
+        </div>
+        <button type="button" class="btn btn-light" (click)="abrir2()">Ingresar a mis Viajes</button>
+        <div *ngIf="m==1">
+            <mis-viajes></mis-viajes>
+        </div>
+        <div *ngIf="b==1">
+            <info></info>
+        </div>
+        
+</div>

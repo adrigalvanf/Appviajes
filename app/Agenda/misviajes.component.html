@@ -1,0 +1,17 @@
+<h1>Mi Agenda de Viajes</h1>
+<button *ngIf="vpv==1" class="btn btn-warning" (click)="get(); ocultarmenu()">Ver Proximos Viajes</button>
+<br>
+<div id="viaj" class="container">
+    <td>
+        <div id="city">
+            <a *ngFor="let ciudades of ciudad">{{ciudades[0]}}   desde {{ciudades[1] | date:"shortDate"}} a {{ciudades[2] | date:"shortDate"}}<input id="{{ciudades[0]}}" type="checkbox" (click)="complete($event)">
+                </a>
+        
+            
+        </div>  
+    </td>
+    
+
+
+</div>
+<br>

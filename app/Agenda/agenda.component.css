@@ -1,0 +1,15 @@
+button{
+    background-color: rgb(242, 242, 149);
+    margin-top: 10%;
+}
+button:hover{
+    background-color: rgb(247, 239, 94);
+}
+li{
+    text-decoration: none;
+}
+*{
+    text-align: center;
+}
+
+
